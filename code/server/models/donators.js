@@ -30,7 +30,14 @@ var Donators = {
 		collection.findOneAndUpdate(query, donator, options, function (err, res) {
 			callback(err, res.value);
 		});
+	},
+	find: function (query, sort, callback) {
+		var collection = mongo.DB.collection('donators');
+		
+		collection.find(query).sort(sort).toArray(callback);
+		
 	}
+
 };
 
 module.exports = Donators;
