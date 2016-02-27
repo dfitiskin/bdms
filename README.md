@@ -7,7 +7,9 @@
 3. Set up MongoDB connection url in `package.json` or use `npm config set bdms:db URL`
 4. Run `npm start`
 
-http://kuvalda.ru:8080/
+## Demo
+ 
+https://bdm-system.herokuapp.com/
 
 ## Dependencies
 
